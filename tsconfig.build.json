@@ -6,7 +6,8 @@
     "types": ["bun-types"],
     "declaration": true,
     "noEmit": false,
-    "allowImportingTsExtensions": false
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/tests/**"]

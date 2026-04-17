@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto'
-import { CCH_POSITIONS, CCH_SALT, CLAUDE_CODE_VERSION } from './constants'
+import { CCH_POSITIONS, CCH_SALT, CLAUDE_CODE_VERSION } from './constants.ts'
 
 type Message = {
   role?: string

@@ -1,4 +1,4 @@
-import { buildBillingHeaderValue } from './cch'
+import { buildBillingHeaderValue } from './cch.ts'
 import {
   CLAUDE_CODE_ENTRYPOINT,
   CLAUDE_CODE_IDENTITY,
@@ -8,7 +8,7 @@ import {
   TEXT_REPLACEMENTS,
   TOOL_PREFIX,
   USER_AGENT,
-} from './constants'
+} from './constants.ts'
 
 /**
  * Prefix a tool name with TOOL_PREFIX and uppercase the first character.

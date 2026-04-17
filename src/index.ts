@@ -1,6 +1,6 @@
 import type { Plugin } from '@opencode-ai/plugin'
-import { authorize, exchange } from './auth'
-import { CLIENT_ID, TOKEN_URL } from './constants'
+import { authorize, exchange } from './auth.ts'
+import { CLIENT_ID, TOKEN_URL } from './constants.ts'
 import {
   createStrippedStream,
   isInsecure,
@@ -8,7 +8,7 @@ import {
   rewriteRequestBody,
   rewriteUrl,
   setOAuthHeaders,
-} from './transform'
+} from './transform.ts'
 
 export const AnthropicAuthPlugin: Plugin = async ({ client }) => {
   return {

@@ -4,8 +4,8 @@ import {
   CODE_CALLBACK_URL,
   OAUTH_SCOPES,
   TOKEN_URL,
-} from './constants'
-import { generatePKCE } from './pkce'
+} from './constants.ts'
+import { generatePKCE } from './pkce.ts'
 
 type CallbackParams = {
   code: string
