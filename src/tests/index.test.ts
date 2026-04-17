@@ -571,7 +571,7 @@ describe('auth.loader', () => {
     await result.fetch(MESSAGES_URL, EMPTY_POST)
 
     expect(tokenRequestBodies).toHaveLength(1)
-    const sentBody = JSON.parse(tokenRequestBodies[0])
+    const sentBody = JSON.parse(tokenRequestBodies[0] ?? '{}')
     expect(sentBody.refresh_token).toBe('rotated-refresh-from-storage')
     expect(sentBody.refresh_token).not.toBe('stale-refresh')
   })
